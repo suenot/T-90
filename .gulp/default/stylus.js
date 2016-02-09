@@ -1,19 +1,19 @@
 'use strict';
-var gulp = require('gulp');
-var newer = require('gulp-newer');
-var plumber = require('gulp-plumber');
-var stylus = require('gulp-stylus');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var errorHandler = require('../utils/errorHandler');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var src = {};
-var browsers ={};
-var changed = require('gulp-changed');
-var gutil = require('gulp-util');
-var gulpif = require('gulp-if');
-var autoprefixerOptions = require('../utils/config').autoprefixer;
+const gulp = require('gulp');
+const newer = require('gulp-newer');
+const plumber = require('gulp-plumber');
+const stylus = require('gulp-stylus');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+const errorHandler = require('../utils/errorHandler');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const src = {};
+const browsers ={};
+const changed = require('gulp-changed');
+const gutil = require('gulp-util');
+const gulpif = require('gulp-if');
+const autoprefixerOptions = require('../utils/config').autoprefixer;
 
 src.styl = {
 	'files': [

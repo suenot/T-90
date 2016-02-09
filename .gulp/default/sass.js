@@ -1,12 +1,12 @@
 'use strict';
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var gutil = require('gulp-util');
-var gulpif = require('gulp-if');
-var autoprefixerOptions = require('../utils/config').autoprefixer;
-var browserSync = require('browser-sync');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const gutil = require('gulp-util');
+const gulpif = require('gulp-if');
+const autoprefixerOptions = require('../utils/config').autoprefixer;
+const browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
 	gulp.src([

@@ -1,16 +1,16 @@
 'use strict';
-var gulp = require('gulp');
-var plumber = require('gulp-plumber');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var src = {};
-var jadeInheritance = require('gulp-jade-inheritance');
-var jade = require('gulp-jade');
-var changed = require('gulp-changed');
-var cached = require('gulp-cached');
-var gulpif = require('gulp-if');
-var filter = require('gulp-filter');
-var errorHandler = require('../utils/errorHandler');
+const gulp = require('gulp');
+const plumber = require('gulp-plumber');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+const src = {};
+const jadeInheritance = require('gulp-jade-inheritance');
+const jade = require('gulp-jade');
+const changed = require('gulp-changed');
+const cached = require('gulp-cached');
+const gulpif = require('gulp-if');
+const filter = require('gulp-filter');
+const errorHandler = require('../utils/errorHandler');
 
 gulp.task('jade', function() {
 	return gulp.src(

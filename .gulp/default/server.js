@@ -1,8 +1,8 @@
 'use strict';
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var gutil = require('gulp-util');
+const gulp = require('gulp');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+const gutil = require('gulp-util');
 
 var serverOpen = false;
 var reloadBrowser = false;

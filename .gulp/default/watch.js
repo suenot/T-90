@@ -1,5 +1,5 @@
 'use strict';
-var gulp = require('gulp');
+const gulp = require('gulp');
 
 gulp.task('watch', ['setWatch'], function() {
 	gulp.watch('assets/**/**/**/*.jade', ['jade']);
