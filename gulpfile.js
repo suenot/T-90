@@ -15,9 +15,28 @@ gulp.task('default', function(cb) {
 			'nunjucks'
 		],
 		[
+			'minImg',
+			'minCss',
+			'minJs',
+			'minHtml'
+		],
+		[
 			'server',
 			'watch'
 		],
 		cb
 	);
+});
+
+gulp.task('minImgAssets', ['minImgA'], function() {});
+
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+	return gulp.src('./public/**/*')
+	.pipe(ghPages({
+		origih: 'origin',
+		branch: 'gh-pages',
+		force: true
+	}));
 });
