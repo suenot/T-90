@@ -1,5 +1,5 @@
 // Error options
-var const = require('gulp-util');
+var gutil = require('gulp-util');
 
 onError = function(err) {
 	gutil.beep(),

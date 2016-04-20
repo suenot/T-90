@@ -1,11 +1,12 @@
 'use strict';
-const gulp = require('gulp');
-const sftp = require('gulp-sftp');
+var gulp = require('gulp');
+var sftp = require('gulp-sftp');
 
-const server = {
+var siteName = 'site';
+var server = {
 	host: '185.5.250.59',
 	user: 'frontend',
-	remotePath: '/home/frontend/sites/prestapro.ru'
+	remotePath: '/home/frontend/sites/' + sitename
 }
 
 gulp.task('sftp', function () {

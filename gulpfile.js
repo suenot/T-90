@@ -1,15 +1,18 @@
 'use strict';
 
-const runSequence = require('run-sequence');
-const gulp = require('gulp');
+var runSequence = require('run-sequence');
+var gulp = require('gulp');
 
 gulp.task('default', function(cb) {
 	require('require-dir')('./.gulp/default', {recurse: true});
 	runSequence(
+		'del',
+		'copy',
 		[
 			'sass',
 			'styl',
-			'jade'
+			'jade',
+			'nunjucks'
 		],
 		[
 			'server',
